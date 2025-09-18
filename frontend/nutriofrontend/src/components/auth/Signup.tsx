@@ -49,7 +49,7 @@ const Signup = () => {
                 className="bg-white dark:bg-gray-800 text-black dark:text-white p-8 rounded shadow-md w-full max-w-md border border-orange-200 dark:border-gray-600"
             >
                 <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-2xl font-bold text-orange-400 dark:text-orange-300">Sign Up</h2>
+                    <h2 className="text-2xl font-bold text-purple-600 dark:text-purple-600">Sign Up</h2>
                     <button
                         type="button"
                         onClick={toggleTheme}
@@ -98,7 +98,7 @@ const Signup = () => {
 
                 <button
                     type="submit"
-                    className="w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition"
+                    className="w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-500 transition"
                 >
                     Sign Up
                 </button>

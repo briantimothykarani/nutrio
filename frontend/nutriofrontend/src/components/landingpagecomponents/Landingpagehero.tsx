@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 
-
+import { motion } from 'framer-motion';
 
 function LandingPagehero() {
 
@@ -25,9 +25,14 @@ function LandingPagehero() {
 
             <div className="h-145 w-full bg-gradient-to-br from-gray-600 via-black to-black text-white overflow-hidden">
                 <br /><br /><br /><br />
-                <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-center">
-                    Your next Ai powered fitness instructor
-                </h1>
+                < motion.h1
+                style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 2, ease: "easeInOut" }}
+                className="text-5xl md:text-6xl font-extrabold mb-4 text-center">
+                Your next Ai powered fitness instructor
+                </motion.h1>
                 <div className="flex justify-around">
                     <div>
                         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
@@ -43,9 +48,12 @@ function LandingPagehero() {
 
                         </div>
                     </div>
-                    <div>
+                    <motion.div
+                    initial={{ y: 25, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeInOut" }}>
                         <img src="./images/hero.jpeg " alt="hero image" className="w-100 h-100" />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 

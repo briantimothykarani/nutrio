@@ -29,7 +29,7 @@ const Login = () => {
     return (
         <div className="min-h-screen flex items-center justify-center bg-green-300 dark:bg-gray-900 transition duration-300">
             <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 text-black dark:text-white p-8 rounded shadow-md w-full max-w-md border border-orange-200 dark:border-gray-600">
-                <h2 className="text-2xl font-bold mb-6 text-orange-400 text-center">Login</h2>
+                <h2 className="text-2xl font-bold mb-6 text-purple-600 text-center">Login</h2>
 
                 <input
                     type="text"
@@ -59,7 +59,7 @@ const Login = () => {
 
                 {error && <p className="text-red-500 mb-4">{error}</p>}
 
-                <button type="submit" className="w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 cursor-pointer">
+                <button type="submit" className="w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-500 cursor-pointer">
                     Log In
                 </button>
 
