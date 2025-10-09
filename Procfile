@@ -1,1 +1,1 @@
-web: gunicorn nutrio.wsgi:application
+web: gunicorn nutrio.wsgi:application --settings=nutrio.settings
